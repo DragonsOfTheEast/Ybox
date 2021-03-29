@@ -8,7 +8,13 @@ body {
     color: #875F9A;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.image{
+    width:100px;
+    height:70px;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
 .button {
     background-color: #BF55EC;
     padding: 7px;
