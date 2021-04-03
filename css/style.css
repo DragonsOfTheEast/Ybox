@@ -1,79 +1,135 @@
 .navbar {
-	height: 75px;
-	display: flex;
-	justify-content: space-between;
-	padding: 0 25px;
-	border-bottom: #875f9a solid 1px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    border-bottom: #875f9a solid 1px;
 }
 
 .logo {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .links {
-	width: 60%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .navitem {
-	padding: 25px 15px;
-	color: #875f9a;
-	text-decoration: none;
+    padding: 25px 15px;
+    color: #875f9a;
+    text-decoration: none;
 }
 
 .navitem:hover {
-	color: #272727 !important;
-	background-color: #bf55ec !important;
+    color: #272727 !important;
+    background-color: #bf55ec !important;
 }
 
 .links .active {
-	color: #bf55ec;
-	background-color: #272727;
+    color: #bf55ec;
+    background-color: #272727;
 }
 
 body {
-	width: 80%;
-	max-width: 1000px;
-	min-width: 600px;
-	margin: 0 auto;
-	text-align: center;
-	background-color: #272727;
-	color: #875f9a;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
-		sans-serif;
+    width: 80%;
+    max-width: 1000px;
+    min-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #272727;
+    color: #875f9a;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .image {
-	width: 100px;
-	height: 70px;
-	position: absolute;
-	left: 80px;
-	top: 10px;
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    left: 80px;
+    top: 10px;
 }
+
 .button {
-	background-color: #bf55ec;
-	padding: 7px;
-	border-radius: 10px;
-	text-decoration: none;
-	color: #fff;
-	font-size: 14pt;
+    background-color: #bf55ec;
+    padding: 7px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14pt;
 }
 
 .product {
-	border-top: #bf55ec solid 2px;
-	margin-top: 20px;
-	text-align: left;
+    border-top: #bf55ec solid 2px;
+    margin-top: 20px;
+    text-align: left;
 }
 
 .product h2 {
-	color: #bf55ec;
+    color: #bf55ec;
 }
 
 .distribute {
-	display: flex;
-	justify-content: space-between;
-	margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+body {
+    text-align: center;
+    background-color: #272727;
+    color: #875F9A;
+    width: 80%;
+    max-width: 1000px;
+    min-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+h1.About {
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h4.About {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.YBoxAims {
+    border-top: #BF55EC solid 2px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.YBoxMethodGoal {
+    border-top: #BF55EC solid 2px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.YBoxPurchasing {
+    border-top: #BF55EC solid 2px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.YBoxProducts {
+    border-top: #BF55EC solid 2px;
+    margin-top: 20px;
+    text-align: left;
 }
