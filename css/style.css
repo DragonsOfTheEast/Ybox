@@ -54,13 +54,29 @@ body {
 	top: 10px;
 }
 
-.button {
-	background-color: #bf55ec;
+
+/** Button styling for Bootstrap POC **/
+.btn-primary {
+	background-color: #bf55ec !important;
+	border-color: #bf55ec !important;
 	padding: 7px;
-	border-radius: 10px;
+	border-radius: 3px;
 	text-decoration: none;
 	color: #fff;
 	font-size: 14pt;
+}
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-primary:visited,
+  .btn-primary:focus {
+	background-color: #bf55ec86 !important;
+	border-color: #bf55ec86 !important;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .product {
@@ -199,4 +215,14 @@ h4.About {
 
 .emphasis {
 	color: #bf55ec;
+}
+
+.footer {
+	background-color: #fff;
+	height: 75px;
+	border-top: #875f9a solid 1px;
+	width: 80%;
+	max-width: 2000px;
+	min-width: 1000px;
+	text-align: center;
 }
