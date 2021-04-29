@@ -9,107 +9,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ybox | Home</title>
     <!-- Bootstrap stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <!-- Ybox stylesheet -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- The JavaScript enables the carousel to run properly -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 </head>
 
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar">
-        <span class="logo">
-            <a class="" href="./index.html">
-                <img src="./images/banner.png" height="120px" alt="Ybox Logo">
-            </a>
-        </span>
-        <span class="links">
-            <a class="navitem active" href="./index.html">Home</a>
-            <a class="navitem" href="./about.html">About</a>
-            <a class="navitem" href="./support.html">Support</a>
-            <a class="navitem" href="./faq.html">FAQ</a>
-            <a class="navitem" href="./checkout.html">Checkout</a>
-        </span>
-    </nav>
-    <br>
-    <main>
-        <h1 class="emphasis">The Ybox is the Ultimate Gaming Experience</h1>
-        <a type="button" class="btn btn-primary" href="./checkout.html">Buy yours today</a>
-        <h2 class="emphasis">The One Place For All Your Gaming Needs</h2>
-        <!-- Small bar for naviagting the page vertically -->
-        <a type="button" class="btn btn-primary" href="#console">Console</a>
-        <a type="button" class="btn btn-primary" href="#games">Games</a>
-        <a type="button" class="btn btn-primary" href="#subscriptions">Subscriptions</a>
-    </main>
-    <!-- Talks about the console -->
-    <section class="product" id="console">
-        <h2>Our console is the most robust of them all</h2>
-        <!-- Distribute evenly distributes its children -->
-        <div class="distribute">
-            <img height="350px" src="./images/console.png" alt="Ybox Console">
-            <div style="padding: 20px">
-                <p>After 15 Years of research and development, we have finally struck the what gamers have been looking for all along. A future-proof console that will adapt to match the needs of its developers. We are invested in providing the best experience
-                    for gamers in the long run. The Ybox does not come with a number. This is because the Ybox will adapt over time and will never become obsolete.
-                </p>
-                <a type="button" class="btn btn-primary" href="./checkout.html">Join the Revolution!</a>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/banner.png" alt="" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="./about.html">About</a>
+          <a class="nav-link" href="./support.html">Support</a>
+          <a class="nav-link" href="./faq.html">FAQ</a>
+          <a class="nav-link" href="./checkout.html">Checkout</a>
+          <a class="nav-link disabled" href="#">Login</a>
         </div>
-    </section>
-    <!-- Talks about the games -->
-    <section class="product" id="games">
-        <h2>An already excellent selection of games, and growing quickly</h2>
-        <p>From AAA titles like Call of Duty and Fortnite, to indie games you are yet to discover, our selection is immense.
-        </p>
-        <!-- A carousel that displays some popular titles -->        
-        <div class="container">
-          <div class="w-75 h-75">
-            <div class="carousel slide" id="carouselExample" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExample" data-slide-to="1" class="active"></li>
-                <li data-target="carouselExample" data-slide-to="2" class="active"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/4/40/Black_Ops_Cold_War.jpeg" alt="Call of Duty" class="d-block w-100 h-100">
-                </div>
-                <div class="carousel-item active">
-                  <img src="https://gameskeys.net/wp-content/uploads/2020/04/591311205bafe31cbf5cd2db.jpg" alt="Rocket League" class="d-block w-100 h-100">
-                </div>
-                <div class="carousel-item active">
-                  <img src="https://image-cdn.essentiallysports.com/wp-content/uploads/20200429184921/MV5BOGY3ZjM3NWUtMWNiMi00OTcwLWIxN2UtMjNhMDhmZWRlNzRkXkEyXkFqcGdeQXVyNjMxNzQ2NTQ%40._V1_.jpg" alt="Fortnite" class="d-block w-100 h-100">
-                </div>
+      </div>
+    </nav>
+    <div class="container-fluid p-5 bg-dark border-2 border-bottom border-primary">
+      <h1 class="text-center m-4 display-3 text-primary">The Ybox is the Ultimate Gaming Experience</h1>
+    </div>
+    <div class="container-fluid bg-dark py-3 border-2 border-bottom border-primary">
+      <div class="container d-flex">
+        <img class="ms-4" height="400" src="./images/console.png" alt="Console">
+        <div class="m-4 my-auto">
+          <h1 class="text-primary">The Console</h1>
+          <p class="text-secondary">After 15 Years of research and development, we have finally struck the what gamers have been looking for all along. A future-proof console that will adapt to match the needs of its developers. We are invested in providing the best experience
+            for gamers in the long run. The Ybox does not come with a number. This is because the Ybox will adapt over time and will never become obsolete.
+          </p>
+          <a class="btn btn-primary" href="./checkout.html">Join the Revolution!</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-secondary py-3 border-2 border-bottom border-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <div class="card bg-dark">
+              <img src="./images/games/fortnite.jpg" class="card-img-top" alt="Fortnite">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Fortnite</h5>
+                <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
               </div>
-              <a href="#carouselExample" class="carousel-control-prev" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only"></span>
-              </a>
-              <a href="#carouselExample" class="carousel-control-next" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only"></span>
-              </a>
             </div>
           </div>
+          <div class="col-md">
+            <div class="card bg-dark">
+              <img src="./images/games/rocketleague.jpg" class="card-img-top" alt="Rocket League">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Rocket League</h5>
+                <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark">
+              <img src="./images/games/cod.jpeg" class="card-img-top" alt="Call of Duty">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Call of Duty: Black Ops Cold War</h5>
+                <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+          </div>
         </div>
-        <br><br>
-        <a type="button" class="btn btn-primary" href="./checkout.html">View more titles</a>
-    </section>
-    <!-- Talks about the subscription -->
-    <section class="product" id="subscriptions">
-        <h2>Get Ybox Max, the ultimate gaming experience at a low monthly rate</h2>
-        <p>Ybox Max gives you access to over 200 games as well as the online services powering them. </p>
-        <img style="display: block;margin: 20px;" height="350px" src="https://compass-ssl.xbox.com/assets/d3/67/d367acd1-6b8e-4077-b190-21699ee18f27.jpg?n=Game-Hub_Content-Placement-0_Backward-Compatibility_788x444.jpg" alt="Ybox Games">
-        <a type="button" class="btn btn-primary" href="./checkout.html">Start your free trial</a>
-    </section>
-    <br>
-    <!-- The JavaScript enables the carousel to run properly -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+      </div>
+    </div>
+    </div>
+    <div class="container-fluid bg-dark py-3 border-2 border-bottom border-primary">
+      <div class="container d-flex">
+        <div class="m-4 my-auto">
+          <h1 class="text-primary">Ybox Max</h1>
+          <p class="text-secondary">Ybox Max gives you access to over 200 games as well as the online services powering them.</p>
+          <a class="btn btn-primary" href="./checkout.html">Start your Free Trial!</a>
+        </div>
+        <img class="ms-4" height="400" src="https://compass-ssl.xbox.com/assets/d3/67/d367acd1-6b8e-4077-b190-21699ee18f27.jpg?n=Game-Hub_Content-Placement-0_Backward-Compatibility_788x444.jpg" alt="Ybox Max">
+      </div>
+    </div>
+    
 </body>
-
-<!-- Footer -->
-<section class="footer" id="disclaimers">
-    <h3> Footer </h3>
-</section>
 
 </html>
