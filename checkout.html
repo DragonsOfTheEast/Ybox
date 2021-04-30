@@ -5,56 +5,83 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css\style.css">
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ybox | Checkout</title>
+     <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- The JavaScript enables the carousel to run properly -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 </head>
 
-<body>
-    <!-- This is the navigation bar -->
-    <nav class="navbar">
-        <span class="logo">
-            <a class="" href="./index.html">
-                <img src="./images/banner.png" height="120px" alt="Ybox Logo">
-            </a>
-        </span>
-        <span class="links">
-            <a class="navitem" href="./index.html">Home</a>
-            <a class="navitem" href="./about.html">About</a>
-            <a class="navitem" href="./support.html">Support</a>
-            <a class="navitem" href="./faq.html">FAQ</a>
-            <a class="navitem active" href="./checkout.html">Checkout</a>
-        </span>
+<!--Body class sets the entire background page to dark-->
+<body class="bg-dark">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/banner.png" alt="" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="./about.html">About</a>
+          <a class="nav-link" href="./support.html">Support</a>
+          <a class="nav-link" href="./faq.html">FAQ</a>
+          <a class="nav-link" href="./checkout.html">Checkout</a>
+          <a class="nav-link disabled" href="#">Login</a>
+        </div>
+      </div>
     </nav>
+    
 
-    <main>
-        <h1 class="emphasis">Checkout</h1>
-        <hr>
-        <h2>Your Shopping Cart</h2>
-        <p>1 x Fortnite</p>
-        <p>1 x Controller</p>
-        <p>2 x Batteries</p>
-        <!-- This is the forum field for billing details -->
-        <h2>Billing details</h2><br>
-        <form>
-            <div>First Name: <input type="text" id="fname" name="firstname"></div>
-            <div>Last Name: <input type="text" id="lname" name="lastname"></div>
-            <div>Card Number: <input type="text" id="lname" name="CardNumber"></div>
-        </form>
-        <!-- This is the forum field for shipping details -->
-        <h2>Shipping details</h2><br>
-        <form>
-            <div>Country: <input type="text" id="fname" name="Country"> </div>
-            <div>State: <input type="text" id="lname" name="State"> </div>
-            <div>Zip Code: <input type="text" id="zip" name="ZipCode"></div>
-            <div>Street: <input type="text" id="steet" name="Street"><br></div>
-            <div>Apartment number: <input type="text" id="steet" name="Apartment"><br></div>
-        </form>
-        <br>
-        <a href="./checkout.html" class="button">Purchase</a>
-    </main>
+    <div class="container">
+
+        <main>
+            <div class="py-5 text-center">
+                <!--Checkout Form Description-->
+                <h1 class="m-4 text-primary">Checkout Form</h1>
+                <p class="text-secondary">
+                Welcome to the Ybox Checkout Page! This is where you purchase the products placed in<br>
+                your cart. Once you're sure of your items please fill out the billing information below!
+                </p>
+            </div>
+
+            <!--Checkout Form Creation -->
+            <div class="row g-5">
+
+                <!--Shopping Cart-->
+                <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary"> Your Shopping Cart</span>
+                        <span class="badge bg-primary rounded-pill">1</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between.hl-sm">
+                            <div>
+                                <h6 class="my-0 text-secondary"> Ybox Console</h6>
+                                <small class="text-muted text-secondary"> Release the Dragon with this nex-gen gaming device!</small>
+                            </div>
+                            <span class="text-muted text-secondary">$420</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span> Total (USD)</span>
+                            <strong>$420</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Billing Address Form Creation-->
+                <div class+"col-md-7 col-lg-8">
+                    <h4 class="mb-3 text-primary">Billing Address</h4>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>
