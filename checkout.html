@@ -53,9 +53,8 @@
 
             <!--Checkout Form Creation -->
             <div class="row g-5">
-
                 <!--Shopping Cart-->
-                <div class="col-md-5 col-lg-4 order-md-last">
+                <div class="col-md-5 col-lg-4 order-md-first">
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-primary"> Your Shopping Cart</span>
                         <span class="badge bg-primary rounded-pill">1</span>
@@ -75,13 +74,133 @@
                     </ul>
                 </div>
 
+                <hr class="my-4 text-primary">
+
                 <!--Billing Address Form Creation-->
-                <div class+"col-md-7 col-lg-8">
-                    <h4 class="mb-3 text-primary">Billing Address</h4>
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3 text-primary">Billing Details</h4>
+                    <form class="needs-validation" novalidate>
+                    <div class="row gy-3">
+                        <!--First name Form field Entry -->
+                            <div class="col-sm-6">
+                                <label for="firstname" class="form-label text-secondary"> First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder value required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+            
+                        <!--Last name Form field Entry -->
+                                <div class="col-sm-6">
+                                    <label for="lastname" class="form-label text-secondary"> Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder value required>
+                                    <div class="invalid-feedback">
+                                        Valid last name is required.
+                                    </div>
+                            </div>
+
+                            <!-- Address Form Field Entry-->
+                            <div class="col-12">
+                                <label for="address" class="form-label text-secondary">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                                <div class="invalid-feedback">
+                                    Pleas enter your shipping address.
+                                </div>
+ 
+                            <!--Country Selection Entry-->
+                            <div class="col-md-5">
+                                <label for="country" class="form-label text-secondary">Country</label>
+                                <select class="form-select" id="country" required>
+                                    <option value>Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+                            <!--State Selection Entry-->
+                            <div class="col-md-5">
+                                <label for="state" class="form-label text-secondary">State</label>
+                                <select class="form-select" id="state" required>
+                                    <option value>Choose...</option>
+                                    <option>New York</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <!--Zip Code Entry-->
+                            <div class="col-md-3">
+                                <label for="zip" class="form-label text-secondary">Zip </label>
+                                <input type="text" class="form-control text-secondary" id="zip" placeholder required>
+                                <div class="invalid-feedback">
+                                    Zip code required.
+                                </div>
+                            </div>
+
+                        <hr class="my-4 text-primary">
+
+                        <!--Card Information field Entry-->
+                        <h4 class="mb-3 text-primary">Payment</h4>
+
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                <label class="form-check-label text-secondary" for="credit">Credit card</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label text-secondary" for="debit"> Debit Card </label>
+                            </div>
+                        </div>
+                        <!--More Card Information-->
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label text-secondary"> Name on card</label>
+                                <input type="text" class="form-control text-secondary" id="cc-name" placehold required>
+                                <small class="text-muted">Full name as displayed on card</small>
+                                <div class="invalid-feedback">
+                                    Name on card is required
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label text-secondary"> Credit card number</label>
+                                <input type="text" class="form-control text-secondary" id="cc-number" placehold required>
+                                <div class="invalid-feedback">
+                                    credit card number is required
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label text-secondary"> Expiration</label>
+                                <input type="text" class="form-control text-secondary" id="cc-expiration" placehold required>
+                                <div class="invalid-feedback">
+                                    expiration is required
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label text-secondary"> CVV</label>
+                                <input type="text" class="form-control text-secondary" id="cc-cvv" placehold required>
+                                <div class="invalid-feedback">
+                                    expiration is required
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-8 text-primary">
+                        <button class="w-100 btn btn-primary btn-lg" type="submit"> Continue to checkout</button>
+                    </form>
+
                 </div>
             </div>
+
         </main>
+        <hr class="my-8 text-primary">
+        <footer class="my-5 pt-5 text-muted text-center text-small text-secondary">
+            <p class="mb-1"> C 2021-2028 Dragons of the East</p>
+        </footer>
+
     </div>
+
 </body>
 
 </html>
