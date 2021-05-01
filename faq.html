@@ -7,58 +7,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ybox | FAQ</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Ybox | Checkout</title>
+     <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- The JavaScript enables the carousel to run properly -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 </head>
 
-<body>
-    <!-- This is the navigation bar -->
-    <nav class="navbar">
-        <span class="logo">
-            <a class="" href="./index.html">
-                <img src="./images/banner.png" height="120px" alt="Ybox Logo">
-            </a>
-        </span>
-        <span class="links">
-            <a class="navitem" href="./index.html">Home</a>
-            <a class="navitem" href="./about.html">About</a>
-            <a class="navitem" href="./support.html">Support</a>
-            <a class="navitem active" href="./faq.html">FAQ</a>
-            <a class="navitem" href="./checkout.html">Checkout</a>
-        </span>
+	<!--Body class sets the entire background page to dark-->
+	<body class="bg-dark">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/banner.png" alt="" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="./about.html">About</a>
+          <a class="nav-link" href="./support.html">Support</a>
+          <a class="nav-link" href="./faq.html">FAQ</a>
+          <a class="nav-link" href="./checkout.html">Checkout</a>
+          <a class="nav-link disabled" href="#">Login</a>
+        </div>
+      </div>
     </nav>
+	
+	<div class="container">
     <main>
-        <h1 class="emphasis">FAQ</h1>
-
-        <section>
-            <h2 class="emphasis"> Ybox Questions our customers get
-                <h2>
-        </section>
-
-        <!-- Denotes a grouping for a Q and A  -->
-        <section class="question">
-            <h3> How much does the Ybox cost? </h3>
-            <p> The Ybox starting price is $299. </p>
-        </section>
-
-        <section class="question">
-            <h3> Does the YBox come with headphones? </h3>
-            <p> The Ybox does not come with headphones, but you can buy accessories on our website! </p>
-        </section>
-
-        <section class="question">
-            <h3> Do you need to buy a YBox subscription for online games? </h3>
-            <p> Yes. It is required for users to purchase the Ybox subscription in order to play online multiplayer games. If you want to try it out, click our <a href="./index.html#subscriptions">Free Trial</a> link! </p>
-        </section>
-
-        <section class="question">
-            <h3> Where can I buy a Ybox? </h3>
-            <p> We recommend using our website under Console or by going to your local GameStop, BestBuy, Walmart, or Target! </p>
-        </section>
-    </main>
-
+           
+	<div class="container-fluid p-5 bg-dark border-2 border-bottom border-primary">
+        <h1 class="text-center m-4 display-3 text-primary"><strong>FAQ</strong></h1>
+	    <p class="text-center m-4 display-6 text-primary">Our customer's frequently asked questions</p>  
+    </div>
+	<!-- Accordion Bootstrap -->	
+	<div class="accordion accordion-flush" id="accordionFlushExample">
+	<div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button btn-primary collapsed" type="btn-primary" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <strong> How much does the YBox cost?  </strong>
+    </button>
+    </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"> The YBox starting price is $299.</div>
+    </div>
+	</div>
+	<br>
+  
+	<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button btn-primary collapsed" type="btn-primary" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+		<strong> Does the YBox come with headphones? </strong>
+    </button>
+    </h2>
+        <div id="flush-collapseTwo" class="body accordion-collapse  collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">No headphones come with the console, but you can buy extra accessories on our online shop!</div>
+    </div>
+	</div>
+  
+    <br>
+	<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+		<button class="accordion-button btn-primary collapsed" type="btn-primary" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+		<strong> Do you need to buy a YBox subscription for online games? </strong>
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="body accordion-collapse  collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Yes. It is required for users to purchase the Ybox subscription in order to play online multiplayer games. If you want to try it out, click our <a href="./index.html#subscriptions">Free Trial</a> link! </p></div>
+    </div>
+    </div>
+    <br>
+	<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button btn-primary collapsed" type="btn-primary" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+        <strong> Where can I buy a YBox? </strong>
+    </button>
+    </h2>
+        <div id="flush-collapseFour" class="body accordion-collapse  collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">We recommend using our website under Console or by going to your local GameStop, BestBuy, Walmart, or Target!</div>
+    </div>
+    </div>
+	<br>
+	<hr class="my-4 text-primary">
+	<!-- Bootstrap Submit a Comment Section -->
+	<h1 class="text-primary">Question hasn't been answered?</h1>
+          <p class="text-secondary">Submit a question below!</p>
+	   <div class="col-sm-6">
+       <label for="Email" class="form-label text-secondary"> Full Name</label>
+       <input type="text" class="form-control" id="Email" placeholder value required>
+       <div class="invalid-feedback">
+       Valid Name is required.
+       </div>
+       </div>		
+		<div class="col-sm-6">
+        <label for="Email" class="form-label text-secondary"> Email</label>
+        <input type="text" class="form-control" id="Email" placeholder value required>
+        <div class="invalid-feedback">
+        Valid Email Address is required.
+        </div>
+        </div>
+		<br>
+    <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2">Comment</label>
+    <br>
+    <a class="btn btn-primary" href="###">Submit</a>
+    <hr class="my-4 text-primary">
+    <br>
+</div>
+</div>
+</div>
+</section>
+</main>
 </body>
-
-
 </html>
