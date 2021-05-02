@@ -2,52 +2,130 @@
 <html lang="en">
 
 <!--         HTML Header         -->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ybox | Support</title>
-
-    <!-- Stylesheet for this page and company logo -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- The JavaScript allows Bootstrap elements to display properly -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <!-- Places the company logo in the top left corner of the page -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-
     <!-- Stylesheets for the icons above each help option -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/274a1c6b73.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <!-- This is the navigation bar -->
-    <nav class="navbar">
-        <span class="logo">
-            <a class="" href="./index.html">
-                <img src="./images/banner.png" height="120px" alt="Ybox Logo">
-            </a>
-        </span>
-        <span class="links">
-            <a class="navitem" href="./index.html">Home</a>
-            <a class="navitem" href="./about.html">About</a>
-            <a class="navitem active" href="./support.html">Support</a>
-            <a class="navitem" href="./faq.html">FAQ</a>
-            <a class="navitem" href="./checkout.html">Checkout</a>
-        </span>
-    </nav>
+<body class="bg-dark">
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/banner.png" alt="" class="d-inline-block align-text-top"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="#">Support</a>
+            <a class="nav-link" href="./faq.html">FAQ</a>
+            <a class="nav-link" href="./checkout.html">Checkout</a>
+            <a class="nav-link disabled" href="#">Login</a>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Main header -->
     <main>
-        <h1 class="emphasis">Ybox Support</h1>
+        <h1 class="emphasis text-center text-primary p-3 border-2 border-bottom border-primary">Ybox Support</h1>
     </main>
     <br>
-    <h3 class="emphasis">How can we help?</h3>
+    <h2 class="emphasis text-center text-primary">How can we help?</h2>
 
-    <!-- Grid contains 6 options for support -->
-    <div class="grid-container">
-        <div class="account-item"><i class="material-icons" style="font-size:50px; color:#000000">account_circle</i><br> Account & Profile </div>
-        <div class="subscriptions-item"><i class="material-icons" style="font-size:50px; color:#000000">credit_card</i><br> Subscriptions & Billing </div>
-        <div class="hardware-item"><i class="material-icons" style="font-size:50px; color:#000000">computer</i><br> Hardware & Networking </div>
-        <div class="family-item"><i class='fas fa-user-shield' style='font-size:40px; color:#000000'></i><br> Family & Online Safety </div>
-        <div class="games-item"><i class="material-icons" style="font-size:50px; color:#000000">gamepad</i><br> Games & Apps </div>
-        <div class="friends-item"><i class="material-icons" style="font-size:50px; color:#000000">people</i><br> Friends & Social Activity </div>
+    <!-- 2X3 grid contains the different help options -->
+    <div class="container p-3 overflow-hidden">
+        <div class="row row-cols-3 g-md-2">
+            <div class="col-md-4">
+                <a href="./support.html" style="text-decoration: none">
+                    <div class="card bg-light">
+                        <i class="material-icons" style="font-size:250px; color:#f8f9fa; text-align: center;">account_circle</i>
+                        <div class="card-body">
+                            <h5 class="card-title text-light" style="font-size: 30px; text-align: center">Account & Profile</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./support.html" style="text-decoration: none">
+                    <div class="card bg-light">
+                        <i class="material-icons" style="font-size:250px; color:#f8f9fa; text-align: center;">credit_card</i>
+                        <div class="card-body">
+                            <h5 class="card-title text-light" style="font-size: 30px; text-align: center">Subscriptions & Billing</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./support.html" style="text-decoration: none">
+                    <div class="card bg-light">
+                        <i class="material-icons" style="font-size:250px; color:#f8f9fa; text-align: center;">computer</i>
+                        <div class="card-body">
+                            <h5 class="card-title text-light" style="font-size: 28px; text-align: center">Hardware & Networking</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./support.html" style="text-decoration: none">
+                    <div class="card bg-light">
+                        <br>
+                        <i class="fas fa-user-shield" style="font-size:200px; color:#f8f9fa; text-align: center;"></i>
+                        <div class="card-body">
+                            <h5 class="card-title text-light" style="font-size: 30px; text-align: center">Family & Online Safety</h5>
+                        </div>
+                    </div>
+                </a>    
+            </div>
+            <div class="col-md-4">
+                <a href="./support.html" style="text-decoration: none">
+                    <div class="card bg-light">
+                        <i class="material-icons" style="font-size:223px; color:#f8f9fa; text-align: center;">gamepad</i>
+                        <div class="card-body">
+                            <h5 class="card-title text-light" style="font-size: 30px; text-align: center">Games & Apps</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./support.html" style="text-decoration: none">
+                    <div class="card bg-light">
+                        <i class="material-icons" style="font-size:225px; color:#f8f9fa; text-align: center;">people</i>
+                        <div class="card-body">
+                            <h5 class="card-title text-light" style="font-size: 28px; text-align: center">Friends & Social Activity</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- Site footer -->
+    <div class="container-fluid bg-secondary py-3">
+        <footer style="font-size: 12px; text-align: center; color:#272727;"> 
+            <p><small>
+                DISCLAIMER! <br> 
+                This website was made for educational purposes only as a way for the students developing this page to learn the topics of System Design. By using this site, you understand that no consoles are being sold and that all the products on the site are fake. <br>
+                2020 © Christine Coan, Kyle DePace, Jonathan Eisenman, Jelani Joseph, Harrison Zheng, United States <br>
+                Privacy Policy
+            </small></p>
+        </footer>
     </div>
 </body>
 
